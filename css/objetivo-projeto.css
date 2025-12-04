@@ -51,9 +51,15 @@
     background-color: #d9b16f;
     color: #2b1e14;
   }
-                                          /*header fim*/
-
-.menu button {
+  .container {
+    width: 100%;              /* LARGURA MAXIMA 100% E LARGURA MOBILE 380PX */
+    background-color: #2b1e14;
+    border: 2px solid #d9b16f;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 8px #000;
+  }
+  .menu button {
     background-color: transparent;
     border: 1px solid #d9b16f;
     color: #d9b16f;
@@ -66,22 +72,61 @@
   }
  .menu {
     display: flex;
-    gap: 6px;
     margin-left: auto; /* empurra o menu para a direita */
     display: flex;
     gap: 10px; /* espaço entre os botões */
   }
-.small-box{
-    background-color: rgb(255, 238, 199, 0.10);
-    
+  /*------------------------------header fim------------------------------*/
+  .titulo_com_linhas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* espaço entre o texto e as linhas */
+    width: 100%;
 }
-  .container {
-    width: 100%;              /* LARGURA MAXIMA 100% E LARGURA MOBILE 380PX */
-    background-color: #2b1e14;
-    border: 2px solid #d9b16f;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 0 8px #000;
-  }
 
+.titulo_com_linhas::before,
+.titulo_com_linhas::after {
+    content: "";
+    flex: 1;
+    height: 2px; /* espessura da linha */
+    background-color: #8b6b47; /* cor da linha — altere se quiser */
+}
+
+.titulo_com_linhas .titulo1 {
+    font-size: 22px; /* tamanho do texto */
+    font-weight: bold;
+}
+
+.small-box{
+  background-color: rgb(255, 238, 199, 0.10);
+  border-style: double;
+  padding: 10px;
+}
+.objetivo, .lore{
+  text-align: center;
+}
+.moodboard{
+  display: flex;
+  justify-content: center;
+  
+}
+.mood1{
+  width: 25%;
+  padding-left: 5%;
+}
+.mood2{
+  width: 19%;
+  padding-right: 5%;
+}
+
+.moddboards img.zoomed {
+  position: fixed;           /* fixa na tela */
+  top: 50%;                  /* central vertical */
+  left: 50%;                 /* central horizontal */
+  transform: translate(-50%, -50%) scale(2); /* centraliza e aplica zoom */
+  z-index: 1000;             /* sobre todas as outras coisas */
+  max-width: 90%;            /* limita tamanho para não ultrapassar a tela */
+  max-height: 90%;
+}
 
