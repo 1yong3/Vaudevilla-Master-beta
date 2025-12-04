@@ -1,0 +1,283 @@
+  body {
+    background-color: #3a2a1e;
+    color: #d9b16f;
+    font-family: 'Georgia', serif;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10%;           /*MODIFICAR DPS AS BORDAS ESQUERDA DIREITA*/
+  }
+                                   /* ?????? */
+  .container {
+    width: 380px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #000;
+    overflow: hidden;
+  }
+                               /*lINHA ENTRE OS TITULOS*/
+.decor-line {
+    text-align: center;       /* centraliza o conteúdo */  
+    color: #d9b16f;        
+    font-size: 15px;    
+    width: 100px;     
+}
+                                /* HEADER / BANNER SUPERIOR */
+  header {
+    background-color: #3a2a1e;
+    border: 2px solid #d9b16f;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo_img{
+    width: 5%;
+    background-color: #F2DFA9;
+    border-radius: 35%; 
+  }
+  .logo {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #d9b16f;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px #000;
+  }
+  .deco_frame1, .deco_frame2{
+    width: 8%;
+  }
+  .villa{
+    color: white;
+  }
+ 
+
+/* conteúdo do header fica por cima dos efeitos */
+header * {
+  position: relative;
+  z-index: 5;
+}
+
+                                          /*nav butões*/
+  .menu {
+    display: flex;
+    margin-left: auto;                  /* empurra o menu para a direita */
+    display: flex;
+    gap: 10px;                          /* espaço entre os botões */
+  }
+  .menu button {
+    background-color: transparent;
+    border: 1px solid #d9b16f;
+    color: #d9b16f;
+    font-size: 15px;
+    padding: 2px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    transition: all 0.2s;
+  }
+  .menu button:hover {
+    background-color: #d9b16f;
+    color: #2b1e14;
+  }
+   .container {
+    width: 100%;              /* LARGURA MAXIMA 100% E LARGURA MOBILE 380PX */
+    background-color: #2b1e14;
+    border: 2px solid #d9b16f;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 8px #000;
+  }
+                                                    /* SESSÕES INTERNAS */
+  /* .section {
+    border-radius: 6px;
+    margin: 10px;
+    padding: 8px;
+    background-color: #ff6f00;
+  } */
+ .section h2 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  color: #d9b16f;
+ }
+                                        /*LINHA E TITULO DE SESSAO */
+.section h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;                           /* posição da linha: meio do texto */
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(240, 156, 54);
+  z-index: 0;
+}
+.section h2 span {
+  position: relative;
+  background-color: #3a2a1e;               /* mesma cor do fundo */
+  padding: 0 6px;
+}
+
+  .empty-box {
+    border: 1px dashed #d9b16f;
+    height: 80px;
+    margin: 6px 0;
+    border-radius: 10px;
+  }
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px; 
+  }
+  /* Carrossel de facções */
+  .faction-carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+  }
+  .faction-display {                        /*cassousel */
+    width: 150px;
+    height: 25px;
+    border: 2px solid #d9b16f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+  .carousel-arrow {
+    cursor: pointer;
+    background-color: transparent; 
+    font-size: 30px;
+    user-select: none;
+    border: none;
+    text-shadow: 1px 0px 4px gold;
+  }
+  .carousel-arrow:hover {
+    border: none;
+    outline: none;
+     text-shadow: 1px 0px 4px rgb(255, 255, 255);
+}
+                                                /* Personagens */
+  .characters {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .character-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(181, 155, 123, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+    transition: transform 0.2s;
+  }
+  .character-circle:hover {
+    transform: scale(1.2);
+  }
+                                                /* Descrição */
+  .character-description {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding: 1px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .section {
+    border: 1px solid #d9b16f;
+    border-radius: 6px;
+    margin: 10px 0;
+    padding: 8px;
+    background-color: #3a2a1e;
+  }
+  .section h2 {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d9b16f;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .flex-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+.titulo_gritos{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+  .small-box {
+  flex: 1;
+  border: 1px dashed #d9b16f;
+  border-radius: 4px;
+  padding: px; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #fdf1db;
+  text-align: justify; 
+}
+.objetivo{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.lore{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.ver-mais, .ver-mais1{
+  display: inline-block;
+  padding: 2px 2px;
+  border: 1px solid #d9b16f;
+  border-radius: 4px;
+  color: #d9b16f;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+.ver-mais:hover, 
+.ver-mais1:hover{
+  background-color: #d9b16f;
+  color: #2b1e14;
+}
+.episodio1, .episodio2{
+width: 40%;
+}
+.episodio3{
+width: 40%;
+}
+.episodios-row {
+  display: flex;
+  gap: 20px;          /* espaçamento entre as imagens */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;    /* permite quebrar linha em telas pequenas */
+}
+
+.episodio-box img {
+  width: 180px;       /* tamanho igual */
+  height: 250px;      /* mantém proporção visual */
+  object-fit: cover;  /* corta perfeitamente sem deformar */
+  border-radius: 10px;
+  display: block;
+}
+
+
+  
