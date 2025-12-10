@@ -1,0 +1,24 @@
+
+/* ======================= RESPONSIVIDADE ======================= */
+@media screen and (max-width: 1024px) {
+  .slide { flex: 0 0 50%; }
+}
+
+@media screen and (max-width: 768px) {
+  .slide { flex: 0 0 70%; }
+  .logo { font-size: 1.8rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 15%; }
+  .small-box { flex: 1 1 100%; }
+  .characters { gap: 8px; }
+}
+
+@media screen and (max-width: 480px) {
+  .slide { flex: 0 0 90%; }
+  .carousel-btn { font-size: 1.5rem; padding: 10px; }
+  .logo { font-size: 1.5rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 20%; }
+  .character-circle { flex: 0 0 45px; height: 45px; font-size: 1.2rem; }
+  .character-description { font-size: 0.9rem; }
+  .faction-display { flex: 1 1 120px; font-size: 0.9rem; }
+  .menu button { font-size: 0.8rem; padding: 2px 4px; }
+}
