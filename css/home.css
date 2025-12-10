@@ -4,7 +4,7 @@
     font-family: 'Georgia', serif;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 10%;           /*MODIFICAR DPS AS BORDAS ESQUERDA DIREITA*/
+    padding: 10px;           /*MODIFICAR DPS AS BORDAS ESQUERDA DIREITA*/
   }
                                    /* ?????? */
   .container {
@@ -64,7 +64,12 @@ header * {
     display: flex;
     gap: 10px;                          /* espaço entre os botões */
   }
-  .menu button {
+  a{
+    text-decoration: none;
+   color: #d9b16f;
+  }
+
+  .menu button{
     background-color: transparent;
     border: 1px solid #d9b16f;
     color: #d9b16f;
@@ -76,6 +81,10 @@ header * {
     transition: all 0.2s;
   }
   .menu button:hover {
+    background-color: #d9b16f;
+    color: #2b1e14;
+  }
+   a:hover {
     background-color: #d9b16f;
     color: #2b1e14;
   }
@@ -119,12 +128,13 @@ header * {
   background-color: #3a2a1e;               /* mesma cor do fundo */
   padding: 0 6px;
 }
-
   .empty-box {
     border: 1px dashed #d9b16f;
     height: 80px;
     margin: 6px 0;
     border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .flex-row {
     display: flex;
@@ -149,7 +159,6 @@ header * {
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-
   }
   .carousel-arrow {
     cursor: pointer;
@@ -187,12 +196,12 @@ header * {
   }
                                                 /* Descrição */
   .character-description {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 10px;
     padding: 1px;
     width: 100%;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
   }
   .section {
     border: 1px solid #d9b16f;
@@ -225,22 +234,19 @@ header * {
   flex: 1;
   border: 1px dashed #d9b16f;
   border-radius: 4px;
-  padding: px; 
+  padding: 10px; 
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: #fdf1db;
-  text-align: justify; 
+  font-family: Helvetica, sans-serif;
+  font-size: 110%;
 }
-.objetivo{
+.lore, .objetivo{
   text-align: center;
   margin: 0;
   padding: 0;
-}
-.lore{
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
+ }
+
 .ver-mais, .ver-mais1{
   display: inline-block;
   padding: 2px 2px;
@@ -279,5 +285,58 @@ width: 40%;
   display: block;
 }
 
+/* -----------------------------------------------------CARROUSSEL EPISODIOS----------*/
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
 
-  
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 33.3333%;  /* 3 slides visíveis */
+  padding-top: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.slide img {
+  width: calc(100% - 40px); /* reduz largura para deixar espaço para os botões */
+  object-fit: contain;      /* mantém proporção sem cortar */
+  border-radius: 10px;
+  margin: 0 20px;           /* 20px de padding lateral dentro do slide */
+}
+
+/* Botões */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(149, 107, 18, 0.855);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 20px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prev {
+  top: 40%;   /* menor que 50% sobe o botão */
+  left: 20px;
+}
+
+.next {
+  top: 40%;   /* igual ao prev para alinhar */
+  right: 20px;
+}
+
+.carousel-btn:hover {
+  background: rgba(222, 205, 154, 0.7);
+}

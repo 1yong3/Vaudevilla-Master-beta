@@ -5,7 +5,7 @@
     font-family: 'Georgia', serif;
     align-items: center;
     justify-content: flex-start;
-    padding: 0 10%;           /*MODIFICAR DPS AS BORDAS ESQUERDA DIREITA*/
+    padding: 0;           /*MODIFICAR DPS AS BORDAS ESQUERDA DIREITA*/
   }
   
   header {
@@ -76,6 +76,15 @@
     display: flex;
     gap: 10px; /* espaço entre os botões */
   }
+   a:hover {
+    background-color: #d9b16f;
+    color: #2b1e14;
+  }
+   a{
+    text-decoration: none;
+   color: #d9b16f;
+  }
+
   /*------------------------------header fim------------------------------*/
   .titulo_com_linhas {
     display: flex;
@@ -101,15 +110,20 @@
 .small-box{
   background-color: rgb(255, 238, 199, 0.10);
   border-style: double;
-  padding: 10px;
+  padding: 15px;
+  font-family: Helvetica, sans-serif;
+  font-size: 110%;
+  border-color:#d9b16f;
+  color:#fdf1db;
 }
 .objetivo, .lore{
   text-align: center;
 }
 .moodboard{
+  padding-top: 20px;
   display: flex;
   justify-content: center;
-  
+  gap: 100px;
 }
 .mood1{
   width: 25%;
@@ -129,4 +143,6 @@
   max-width: 90%;            /* limita tamanho para não ultrapassar a tela */
   max-height: 90%;
 }
-
+.credito{
+  text-align: center;
+}
