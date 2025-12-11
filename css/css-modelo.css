@@ -1,0 +1,111 @@
+/* ======================= RESET E BASE ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3a2a1e;
+  color: #d9b16f;
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* ======================= CONTAINER ======================= */
+.container {
+    width: 100%;              /* LARGURA MAXIMA 100% E LARGURA MOBILE 380PX */
+    background-color: #2b1e14;
+    border: 2px solid #d9b16f;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 8px #000;
+  }
+
+/* ======================= DECOR LINE ======================= */
+.decor-line {
+  text-align: center;
+  color: #d9b16f;
+  font-size: 14px;
+  width: 100%;
+  margin: 5px 0;
+}
+
+/* ======================= HEADER ======================= */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  background-color: #3a2a1e;
+  border: 2px solid #d9b16f;
+  padding: 6px 10px;
+  position: relative;
+}
+
+header * {
+  position: relative;
+  z-index: 5;
+}
+
+.deco_frame1, .deco_frame2 {
+  width: 10%;
+  max-width: 120px;
+}
+
+.logo_img{
+  background-color: #d9b16f;
+  border-radius: 50px;
+  max-width: 80px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d9b16f;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #000;
+  white-space: nowrap;
+}
+
+.villa {
+  color: white;
+  padding-right: 170px;
+}
+
+/* ======================= MENU ======================= */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.menu button {
+  background-color: transparent;
+  border: 1px solid #d9b16f;
+  color: #d9b16f;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu button:hover, .menu a:hover {
+  background-color: #d9b16f;
+  color: #2b1e14;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #d9b16f;
+}
+
+/* ======================= ÁREA DE CONTEÚDO ======================= */
+main {
+  min-height: 300px;
+  margin-top: 10px;
+}

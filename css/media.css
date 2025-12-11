@@ -1,5 +1,4 @@
-
-/* ======================= RESPONSIVIDADE ======================= */
+/* ======================= RESPONSIVIDADE HOME ======================= */
 @media screen and (max-width: 1024px) {
   .slide { flex: 0 0 50%; }
 }
@@ -21,4 +20,63 @@
   .character-description { font-size: 0.9rem; }
   .faction-display { flex: 1 1 120px; font-size: 0.9rem; }
   .menu button { font-size: 0.8rem; padding: 2px 4px; }
+}
+
+
+/* ======================= RESPONSIVIDADE OBJETIVO-PROJETO ======================= */
+
+/* Tablets e laptops médios */
+@media screen and (max-width: 1024px) {
+  .logo { font-size: 2rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 10%; }
+  .menu button { font-size: 1rem; padding: 2px 5px; }
+
+  .titulo_com_linhas .titulo1 { font-size: 20px; }
+  .small-box { font-size: 1rem; padding: 12px; }
+
+  .moodboard {
+    flex-wrap: wrap;  /* permite quebrar linha */
+    gap: 50px;
+  }
+  .mood1, .mood2 { width: 40%; padding: 0; }
+}
+
+/* Tablets menores */
+@media screen and (max-width: 768px) {
+  .logo { font-size: 1.8rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 12%; }
+  .menu button { font-size: 0.9rem; padding: 2px 4px; }
+
+  .titulo_com_linhas .titulo1 { font-size: 18px; }
+  .small-box { font-size: 0.95rem; padding: 10px; }
+
+  .moodboard {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .mood1, .mood2 { width: 70%; padding: 0; }
+}
+
+/* Celulares */
+@media screen and (max-width: 480px) {
+  .logo { font-size: 1.5rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 18%; }
+  .menu button { font-size: 0.8rem; padding: 2px 3px; }
+
+  .titulo_com_linhas .titulo1 { font-size: 16px; }
+  .small-box { font-size: 0.85rem; padding: 8px; }
+
+  .moodboard {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .mood1, .mood2 { width: 90%; padding: 0; }
+
+  .credito { font-size: 0.7rem; }
+
+  /* Pequenos ajustes de padding para melhor visualização em celular */
+  body { padding: 5px; }
+  .container { padding: 5px; }
 }
