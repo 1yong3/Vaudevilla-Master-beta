@@ -24,13 +24,13 @@
 
 /* Media query para smartphone */
 @media (max-width: 768px) {
-  .faction-carousel-container{
+  .faction-carousel-container, .faction-display{
     flex-wrap: nowrap; /* sobrescreve o wrap e força uma linha só */
     overflow-x: auto;  /* permite scroll horizontal se necessário */
   }
 }
 @media (max-width: 480px) {
-  .faction-carousel-container{
+  .faction-carousel-container, .faction-display{
     flex-wrap: nowrap; /* sobrescreve o wrap e força uma linha só */
     overflow-x: auto;  /* permite scroll horizontal se necessário */
   }
