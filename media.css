@@ -29,6 +29,12 @@
     overflow-x: auto;  /* permite scroll horizontal se necessário */
   }
 }
+@media (max-width: 480px) {
+  .faction-carousel-container{
+    flex-wrap: nowrap; /* sobrescreve o wrap e força uma linha só */
+    overflow-x: auto;  /* permite scroll horizontal se necessário */
+  }
+}
 
 
 /* ======================= RESPONSIVIDADE OBJETIVO-PROJETO ======================= */
