@@ -22,6 +22,20 @@
   .menu button { font-size: 0.8rem; padding: 2px 4px; }
 }
 
+/* Media query para smartphone */
+@media (max-width: 768px) {
+  .faction-carousel-container, .faction-display{
+    flex-wrap: nowrap; /* sobrescreve o wrap e força uma linha só */
+    overflow-x: auto;  /* permite scroll horizontal se necessário */
+  }
+}
+@media (max-width: 480px) {
+  .faction-carousel-container, .faction-display{
+    flex-wrap: nowrap; /* sobrescreve o wrap e força uma linha só */
+    overflow-x: auto;  /* permite scroll horizontal se necessário */
+  }
+}
+
 
 /* ======================= RESPONSIVIDADE OBJETIVO-PROJETO ======================= */
 
@@ -79,4 +93,128 @@
   /* Pequenos ajustes de padding para melhor visualização em celular */
   body { padding: 5px; }
   .container { padding: 5px; }
+}
+
+/* ============================ responsivo do episodio 1 ==============================*/
+/* Media queries para smartphones */
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .logo_img, .deco_frame1, .deco_frame2 {
+    width: 20%;
+  }
+
+  .logo {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .villa {
+    padding-right: 0;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 0;
+  }
+
+  .menu button {
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+
+  .titulo_com_linhas {
+    gap: 10px;
+  }
+
+  .titulo_com_linhas::before,
+  .titulo_com_linhas::after {
+    height: 1px;
+  }
+
+  .small-box {
+    padding: 8px 15px;
+    font-size: 100%;
+  }
+
+  /* Comic gallery */
+  .comic-gallery {
+    gap: 5px;
+  }
+
+  .comic-thumb {
+    width: 120px;
+  }
+
+  /* Leitor */
+  #comic-wrapper {
+    width: 95%;
+    height: 70vh;
+  }
+
+  #comic-strip img.side-page {
+    max-width: 15%;
+  }
+
+  #comic-image {
+    max-width: 70%;
+  }
+
+  .comic-nav {
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  #comic-close {
+    font-size: 36px;
+    right: 15px;
+  }
+}
+
+/* Para celulares bem pequenos */
+@media (max-width: 480px) {
+  .comic-thumb {
+    width: 80px;
+  }
+
+  #comic-wrapper {
+    height: 60vh;
+  }
+
+  #comic-strip img.side-page {
+    max-width: 10%;
+  }
+
+  #comic-image {
+    max-width: 75%;
+  }
+
+  .comic-nav {
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  #comic-close {
+    font-size: 28px;
+  }
+
+  .menu button {
+    font-size: 12px;
+    padding: 1px 3px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
 }
