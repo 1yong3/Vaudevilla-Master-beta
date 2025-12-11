@@ -1,0 +1,214 @@
+/* ======================= RESPONSIVIDADE HOME ======================= */
+@media screen and (max-width: 1024px) {
+  .slide { flex: 0 0 50%; }
+}
+
+@media screen and (max-width: 768px) {
+  .slide { flex: 0 0 70%; }
+  .logo { font-size: 1.8rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 15%; }
+  .small-box { flex: 1 1 100%; }
+  .characters { gap: 8px; }
+}
+
+@media screen and (max-width: 480px) {
+  .slide { flex: 0 0 90%; }
+  .carousel-btn { font-size: 1.5rem; padding: 10px; }
+  .logo { font-size: 1.5rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 20%; }
+  .character-circle { flex: 0 0 45px; height: 45px; font-size: 1.2rem; }
+  .character-description { font-size: 0.9rem; }
+  .faction-display { flex: 1 1 120px; font-size: 0.9rem; }
+  .menu button { font-size: 0.8rem; padding: 2px 4px; }
+}
+
+/* Media query para smartphone */
+@media (max-width: 768px) {
+  .faction-carousel-container{
+    flex-wrap: nowrap; /* sobrescreve o wrap e força uma linha só */
+    overflow-x: auto;  /* permite scroll horizontal se necessário */
+  }
+}
+
+
+/* ======================= RESPONSIVIDADE OBJETIVO-PROJETO ======================= */
+
+/* Tablets e laptops médios */
+@media screen and (max-width: 1024px) {
+  .logo { font-size: 2rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 10%; }
+  .menu button { font-size: 1rem; padding: 2px 5px; }
+
+  .titulo_com_linhas .titulo1 { font-size: 20px; }
+  .small-box { font-size: 1rem; padding: 12px; }
+
+  .moodboard {
+    flex-wrap: wrap;  /* permite quebrar linha */
+    gap: 50px;
+  }
+  .mood1, .mood2 { width: 40%; padding: 0; }
+}
+
+/* Tablets menores */
+@media screen and (max-width: 768px) {
+  .logo { font-size: 1.8rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 12%; }
+  .menu button { font-size: 0.9rem; padding: 2px 4px; }
+
+  .titulo_com_linhas .titulo1 { font-size: 18px; }
+  .small-box { font-size: 0.95rem; padding: 10px; }
+
+  .moodboard {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .mood1, .mood2 { width: 70%; padding: 0; }
+}
+
+/* Celulares */
+@media screen and (max-width: 480px) {
+  .logo { font-size: 1.5rem; }
+  .logo_img, .deco_frame1, .deco_frame2 { width: 18%; }
+  .menu button { font-size: 0.8rem; padding: 2px 3px; }
+
+  .titulo_com_linhas .titulo1 { font-size: 16px; }
+  .small-box { font-size: 0.85rem; padding: 8px; }
+
+  .moodboard {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  .mood1, .mood2 { width: 90%; padding: 0; }
+
+  .credito { font-size: 0.7rem; }
+
+  /* Pequenos ajustes de padding para melhor visualização em celular */
+  body { padding: 5px; }
+  .container { padding: 5px; }
+}
+
+/* ============================ responsivo do episodio 1 ==============================*/
+/* Media queries para smartphones */
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .logo_img, .deco_frame1, .deco_frame2 {
+    width: 20%;
+  }
+
+  .logo {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .villa {
+    padding-right: 0;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 0;
+  }
+
+  .menu button {
+    font-size: 13px;
+    padding: 2px 4px;
+  }
+
+  .titulo_com_linhas {
+    gap: 10px;
+  }
+
+  .titulo_com_linhas::before,
+  .titulo_com_linhas::after {
+    height: 1px;
+  }
+
+  .small-box {
+    padding: 8px 15px;
+    font-size: 100%;
+  }
+
+  /* Comic gallery */
+  .comic-gallery {
+    gap: 5px;
+  }
+
+  .comic-thumb {
+    width: 120px;
+  }
+
+  /* Leitor */
+  #comic-wrapper {
+    width: 95%;
+    height: 70vh;
+  }
+
+  #comic-strip img.side-page {
+    max-width: 15%;
+  }
+
+  #comic-image {
+    max-width: 70%;
+  }
+
+  .comic-nav {
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  #comic-close {
+    font-size: 36px;
+    right: 15px;
+  }
+}
+
+/* Para celulares bem pequenos */
+@media (max-width: 480px) {
+  .comic-thumb {
+    width: 80px;
+  }
+
+  #comic-wrapper {
+    height: 60vh;
+  }
+
+  #comic-strip img.side-page {
+    max-width: 10%;
+  }
+
+  #comic-image {
+    max-width: 75%;
+  }
+
+  .comic-nav {
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  #comic-close {
+    font-size: 28px;
+  }
+
+  .menu button {
+    font-size: 12px;
+    padding: 1px 3px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}
