@@ -9,6 +9,7 @@
   .logo_img, .deco_frame1, .deco_frame2 { width: 15%; }
   .small-box { flex: 1 1 100%; }
   .characters { gap: 8px; }
+  header { flex-direction: row;}
 }
 
 @media screen and (max-width: 480px) {
@@ -20,6 +21,7 @@
   .character-description { font-size: 0.9rem; }
   .faction-display { flex: 1 1 120px; font-size: 0.9rem; }
   .menu button { font-size: 0.8rem; padding: 2px 4px; }
+    header { flex-direction: row;}
 }
 
 /* Media query para smartphone */
@@ -27,6 +29,7 @@
   .faction-carousel-container, .faction-display{
     flex-wrap: nowrap; /* sobrescreve o wrap e força uma linha só */
     overflow-x: auto;  /* permite scroll horizontal se necessário */
+    
   }
 }
 @media (max-width: 480px) {
@@ -103,7 +106,6 @@
   }
 
   header {
-    flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 5px;
