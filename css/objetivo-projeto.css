@@ -99,6 +99,8 @@ body {
     justify-content: center;
     gap: 15px; /* espaço entre o texto e as linhas */
     width: 100%;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 .titulo_com_linhas::before,
@@ -117,11 +119,12 @@ body {
 .small-box{
   background-color: rgb(255, 238, 199, 0.10);
   border-style: double;
-  padding: 10px 25px;
+  padding: 25px 40px;
   font-family: Helvetica, sans-serif;
   font-size: 110%;
   border-color:#d9b16f;
   color:#fdf1db;
+
 }
 .objetivo, .lore{
   text-align: center;
@@ -131,6 +134,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 100px;
+  padding-bottom: 10px;
 }
 .mood1{
   width: 25%;
@@ -152,4 +156,16 @@ body {
 }
 .credito{
   text-align: center;
+}
+.footer-section{
+  background-color: #3a2a1e;
+  padding: 3%;
+  font-size: 20px;
+  border-radius: 10px;
+  border-style: double;
+  border-color: #d9b16f;
+}
+.c-vaud{
+  text-decoration: none;
+  color:#F2DFA9;
 }

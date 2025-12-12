@@ -218,3 +218,52 @@ body {
 }
 
 #comic-close:hover { color: #ffd800; }
+
+
+/*==================== FOOTER ================*/
+.footer-section{
+  background-color: #3a2a1e;
+  padding: 3%;
+  font-size: 20px;
+  border-radius: 10px;
+  border-style: double;
+  border-color: #d9b16f;
+}
+.c-vaud{
+  text-decoration: none;
+  color:#F2DFA9;
+}
+
+
+/*======================= MAIS EPISODIOS ===========================*/
+.slide img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.carousel-container {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+    justify-content: center;
+}
+
+.slide {
+  flex: 0 0 33.3333%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.container-flex{
+  display:flex;
+  justify-content: center;
+}
+
+
