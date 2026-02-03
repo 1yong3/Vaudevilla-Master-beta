@@ -1,0 +1,35 @@
+.container-img{
+display: flex;
+justify-content: center;
+border-style: groove;
+border-color: burlywood;
+ gap: 20px;
+ padding: 20px;
+}
+.concept-img{
+    width: 70%;
+    padding: 20px;
+}
+.container-txt{
+border-style: groove;
+border-color: burlywood;
+margin-top: 20px;
+overflow-y: auto;
+max-height: 300px;   /* altura visível */
+padding: 15px;
+border: 1px solid  burlywood;
+}
+.texto-concept{
+    padding: 20px;
+    text-align: center;
+}
+.color-txt{
+    color: burlywood;
+    font-weight: bold;
+}
+.arc-img{
+    width: 25%;
+    border-style: bold;
+    border-color: rosybrown;
+   
+}

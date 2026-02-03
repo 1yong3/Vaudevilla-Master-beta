@@ -116,6 +116,28 @@ header * {
   background-color: #3a2a1e;
 }
 
+.section1 {
+  border: 1px solid #d9b16f;
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #3a2a1e;
+}
+
+
+.img-wrapper {
+ width: 75%;
+  margin: 0 auto;         
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.capa-moodboard {
+  max-width: 100%;
+  height: auto;
+}
+
 .section h2 {
   text-align: center;
   font-size: 1.2rem;
