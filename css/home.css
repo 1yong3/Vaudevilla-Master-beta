@@ -8,7 +8,6 @@
 body {
   background-color: #3a2a1e;
   color: #d9b16f;
-  font-family: 'Georgia', serif;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -179,7 +178,8 @@ header * {
   border-radius: 4px;
   padding: 10px;
   color: #fdf1db;
-  font-family: Helvetica, sans-serif;
+ font-family: 'Cinzel', serif;
+ letter-spacing: 2px;
   font-size: 1rem;
   text-align: center;
 }

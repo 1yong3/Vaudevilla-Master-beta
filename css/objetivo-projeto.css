@@ -8,7 +8,9 @@
 body {
   background-color: #3a2a1e;
   color: #d9b16f;
-  font-family: 'Georgia', serif;
+  font-family: 'Cinzel', serif;
+   letter-spacing: 2px;
+  font-size: 100%;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -28,7 +30,7 @@ body {
     border-radius: 35%;
   }
   .logo {
-    font-family: 'Georgia', serif;
+   
     font-weight: bold;
     font-size: 30px;
     color: #d9b16f;
@@ -50,7 +52,6 @@ body {
     padding: 2px 6px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Georgia', serif;
     transition: all 0.2s;
   }
   .menu button:hover {
@@ -120,12 +121,12 @@ body {
   background-color: rgb(255, 238, 199, 0.10);
   border-style: double;
   padding: 25px 40px;
-  font-family: Helvetica, sans-serif;
-  font-size: 110%;
+ font-family: 'Cinzel', serif;
+  font-size: 120%;
   border-color:#d9b16f;
   color:#fdf1db;
-
 }
+
 .objetivo, .lore{
   text-align: center;
 }
