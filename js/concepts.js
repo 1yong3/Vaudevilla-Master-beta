@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const characters = [
     {
       name: "Bingo",
-      image: "Img/Robson_icone.png",
+      image: "img2/bingo-bongo.png",
       description: `<strong>Bingo e Bongo:</strong> <br>
 Temas: O cientista Ranzinza,o preço da fama <br>
 <strong>ATO I - O menino entre duas Luzes</strong><br>
